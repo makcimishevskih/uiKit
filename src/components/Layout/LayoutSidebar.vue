@@ -25,6 +25,14 @@ const routesToComponent = reactive([
     path: '/progress',
     name: 'Progress',
   },
+  {
+    path: '/input',
+    name: 'Input',
+  },
+  {
+    path: '/tabs',
+    name: 'Tabs',
+  },
 ])
 
 </script>

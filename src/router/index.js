@@ -6,6 +6,8 @@ import AppButton from '@/views/AppButton.vue'
 import AppCheckbox from '@/views/AppCheckbox.vue'
 import AppRadio from '@/views/AppRadio.vue'
 import AppProgress from '@/views/AppProgress.vue'
+import AppInput from '@/views/AppInput.vue'
+import AppTabs from '@/views/AppTabs.vue'
 
 const routes = [
   {
@@ -37,6 +39,16 @@ const routes = [
     path: '/progress',
     name: 'Progress',
     component: AppProgress
+  },
+  {
+    path: '/input',
+    name: 'Input',
+    component: AppInput
+  },
+  {
+    path: '/tabs',
+    name: 'Tabs',
+    component: AppTabs
   }
 ]
 
