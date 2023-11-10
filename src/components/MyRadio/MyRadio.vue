@@ -34,7 +34,6 @@ const handleChange = (event) => {
 
 <template>
   <div class='line'>
-
     <input type='radio' :id='id' :name='name' @change='handleChange' :disabled='disabled' :checked='radioValue === id'
       :value='value' class='radio' />
     <label :for="id" class='heading-2 label'>{{ label }}</label>

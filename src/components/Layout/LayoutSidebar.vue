@@ -33,6 +33,10 @@ const routesToComponent = reactive([
     path: '/tabs',
     name: 'Tabs',
   },
+  {
+    path: '/table',
+    name: 'Table',
+  },
 ])
 
 </script>

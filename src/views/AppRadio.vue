@@ -1,6 +1,6 @@
 <script setup>
 import { ref, reactive } from 'vue'
-import MyRadio from '@/components/MyRadio.vue'
+import MyRadio from '@/components/MyRadio'
 
 const radioModel = ref('');
 const radio1 = ref('');

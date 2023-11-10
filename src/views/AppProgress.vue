@@ -1,8 +1,9 @@
 <script setup>
 import { onUnmounted, onUpdated, ref } from 'vue';
-import MyProgress from '../components/MyProgress.vue';
-import MyCircle from '../components/MyCircle.vue';
-import MyButton from '../components/MyButton.vue';
+
+import MyProgress from '@/components/MyProgress';
+import MyCircle from '@/components/MyCircle';
+import MyButton from '@/components/MyButton';
 
 const progressPercent = ref(60)
 const circlePercent = ref(60)

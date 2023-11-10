@@ -1,5 +1,4 @@
 <script setup>
-
 const { progressPercent, size, color } = defineProps({
   progressPercent: {
     type: Number,
@@ -14,8 +13,6 @@ const { progressPercent, size, color } = defineProps({
     default: 'primary'
   },
 })
-
-
 </script>
 
 <template>
@@ -23,14 +20,10 @@ const { progressPercent, size, color } = defineProps({
     <span class='progress-circle-percent' :style='{ color: `var(--${color})` }'>
       {{ progressPercent }}
     </span>
-
     <svg width='120' height='120' viewBox='0 0 120 120' class='progress-circle-svg'>
-
       <circle :cx='size' :cy='size' r='54' fill='none' stroke-width='12' :stroke='`var(--${color}-hover)`' />
-
       <circle class='progress-circle-line' :style='{ "stroke-dashoffset": `calc(100 - ${progressPercent})` }' :cx='size'
         :cy='size' r='54' fill='none' stroke-width='12' pathLength='100' :stroke='`var(--${color})`' />
-
     </svg>
   </div>
 </template>

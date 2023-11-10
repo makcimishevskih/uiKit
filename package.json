@@ -1,22 +1,22 @@
 {
   "name": "vue-ui-kit-basic",
-  "version": "0.1.15",
+  "version": "0.1.21",
   "files": [
     "dist"
   ],
-  "main": "dist/vue-ui-kit-basic.common.js",
-  "module": "dist/vue-ui-kit-basic.umd.min.js",
-  "author": "Max Ishe",
+  "main": "./dist/vue-ui-kit.umd.js",
+  "module": "./dist/vue-ui-kit.es.js",
   "type": "module",
-  "description": "## Project setup ``` npm install ```",
   "private": false,
   "exports": {
     ".": {
-      "import": "./dist/vue-ui-kit-basic.es.js",
-      "require": "./dist/vue-ui-kit-basic.umd.js"
+      "import": "./dist/vue-ui-kit.es.js",
+      "require": "./dist/vue-ui-kit.umd.js"
     },
     "./dist/style.css": "./dist/style.css"
   },
+  "author": "Max Ishe",
+  "description": "## Project setup ``` npm install ```",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

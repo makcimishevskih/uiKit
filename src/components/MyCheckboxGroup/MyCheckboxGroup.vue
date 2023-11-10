@@ -1,5 +1,5 @@
 <script setup>
-import MyCheckbox from "./MyCheckbox.vue";
+import MyCheckbox from "@/components/MyCheckbox";
 
 const props = defineProps(["options", "valuesGroup"]);
 const emit = defineEmits(["update:valuesGroup"]);

@@ -1,5 +1,5 @@
 <script setup>
-import MyButton from '@/components/MyButton.vue'
+import MyButton from '@/components/MyButton'
 
 const handle = () => {
   alert('handleClick')

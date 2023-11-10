@@ -1,6 +1,6 @@
 <script setup>
-import MyTabs from '../components/MyTabs.vue'
-import MyTab from '../components/MyTab.vue'
+import MyTabs from '@/components/MyTabs'
+import MyTab from '@/components/MyTab'
 import { ref } from 'vue';
 
 const tabBtns = ref([

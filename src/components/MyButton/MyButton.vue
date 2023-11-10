@@ -69,6 +69,7 @@ const btnClass = computed(() => ({
   font-size: 14px;
   transition: all 0.2s;
   color: #fff;
+  text-transform: uppercase;
 
   &_large {
     height: 50px;

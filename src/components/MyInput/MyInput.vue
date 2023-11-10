@@ -52,21 +52,15 @@ const handleBlur = () => {
 }
 </script>
 
-:value="value"
 <template>
   <div class='form-input' :style='{ width }'>
-
     <input class='input-text' :value:textValue='textValue' :style='{ border: `1px solid var(--${borderColor}-hover)` }'
       :class='{ "input-focus": isFocus }' @input='handleInput' @blur='handleBlur' @focus='handleFocus' :name='name'
       :type='type' :placeholder='placeholder' :id='id' />
-
     <span :class='{ "label-focus": isFocus }' class='label'>{{ label }}</span>
-    <!-- v-if='error' -->
-    <!-- {{ errors }} -->
     <TransitionGroup name='error'>
       <div v-for='err in errors' :key='err.$uid' class='error' :class='{ "error-visible": errors.length }'>
-        {{
-          err.$message }}</div>
+        {{ err.$message }}</div>
     </TransitionGroup>
   </div>
 </template>

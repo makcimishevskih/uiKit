@@ -1,9 +1,10 @@
 <script setup>
 import { computed, ref } from 'vue';
-import useVuelidate from '@vuelidate/core'
 import { helpers, minLength, email, sameAs, numeric, required, minValue, maxValue } from '@vuelidate/validators'
-import MyInput from '../components/MyInput.vue';
-import MyButton from '../components/MyButton.vue';
+import useVuelidate from '@vuelidate/core'
+
+import MyInput from '@/components/MyInput';
+import MyButton from '@/components/MyButton';
 
 const nameField = ref('')
 const emailField = ref('')
@@ -15,8 +16,6 @@ const textareaField = ref('')
 const rules = computed(() => ({
   nameField: {
     minLength: minLength(3),
-    // if we want to change our text
-    // minLength: helpers.withMessage('Some text from error', minLength(3)),
   },
   emailField: {
     email
@@ -49,7 +48,6 @@ const passwordValidate = (value) => {
   const containsSpecial = /[#?!@$%^&*-]/.test(value)
   return value && containsUppercase && containsLowercase && containsNumber && containsSpecial
 }
-
 
 const handleSubmit = () => {
   v.value.$touch() // тронуть все поля формы если пустая то выведет ошибки
@@ -89,9 +87,7 @@ const v = useVuelidate(rules, { nameField, emailField, passwordField, confirmPas
     <my-input v-model:textValue='v.textareaField.$model' type='textarea' placeholder='Type some Frontend string'
       label='Type Frontend string' name='frontend string' :errors='v.textareaField.$errors' />
 
-
-    <my-button></my-button>
-
+    <my-button>Send Form</my-button>
   </form>
 </template>
 

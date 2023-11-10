@@ -8,6 +8,7 @@ import AppRadio from '@/views/AppRadio.vue'
 import AppProgress from '@/views/AppProgress.vue'
 import AppInput from '@/views/AppInput.vue'
 import AppTabs from '@/views/AppTabs.vue'
+import AppTable from '@/views/AppTable.vue'
 
 const routes = [
   {
@@ -49,6 +50,11 @@ const routes = [
     path: '/tabs',
     name: 'Tabs',
     component: AppTabs
+  },
+  {
+    path: '/table',
+    name: 'Table',
+    component: AppTable
   }
 ]
 

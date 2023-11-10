@@ -17,9 +17,7 @@ const { title, text, selectedTab, value } = defineProps({
     required: true
   }
 })
-
 </script>
-
 
 <template>
   <div class='tab' v-show='value === selectedTab'>

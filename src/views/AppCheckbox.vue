@@ -1,7 +1,7 @@
 <script setup>
 import { reactive, ref } from 'vue';
-import MyCheckbox from '../components/MyCheckbox.vue';
-import MyCheckboxGroup from '../components/MyCheckboxGroup.vue';
+import MyCheckbox from '@/components/MyCheckbox';
+import MyCheckboxGroup from '@/components/MyCheckboxGroup';
 
 const checked1 = ref(true);
 const checked2 = ref(false);

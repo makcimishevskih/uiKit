@@ -1,8 +1,8 @@
 <script setup>
 import { RouterView } from 'vue-router'
 
-import LayoutHeader from './components/Layout/LayoutHeader.vue';
-import LayoutSidebar from './components/Layout/LayoutSidebar.vue';
+import LayoutHeader from '@/components/Layout/LayoutHeader.vue';
+import LayoutSidebar from '@/components/Layout/LayoutSidebar.vue';
 
 import { ref } from 'vue';
 
@@ -17,8 +17,7 @@ const toggleSidebar = () => {
   <div class='container'>
     <layout-header />
     <layout-sidebar :isOpen='isOpen' @toggleSidebar='toggleSidebar' />
-
-    <main :class="['content', { 'content_full': isOpen }]">
+    <main class='content' :class="{ 'content_full': isOpen }">
       <router-view />
     </main>
   </div>

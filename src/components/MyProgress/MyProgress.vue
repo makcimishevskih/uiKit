@@ -25,7 +25,6 @@ const { progressPercent, width, height, color } = defineProps({
     <span class='progress-text' :style='{
       color: `var(--${color})`
     }'>{{ progressPercent }}%</span>
-
     <div class=' progress-wrapper' :style='{
       backgroundColor: `var(--${color}-hover)`
     }'>
