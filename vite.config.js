@@ -11,6 +11,7 @@ const __dirname = path.dirname(__filename)
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue(), vueJsx()],
+  publicPath: '/uiKit/',
   resolve: {
     dedupe: ['vue'],
     alias: {
